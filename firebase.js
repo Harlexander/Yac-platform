@@ -1,27 +1,52 @@
-const form = document.querySelector("#form");
+var firebaseConfig = {
+    apiKey: "AIzaSyCw7wHgaD7mpWBvnn3GWprjZmX7eZXW3Pw",
+    authDomain: "yac-platform.firebaseapp.com",
+    databaseURL: "https://yac-platform.firebaseio.com",
+    projectId: "yac-platform",
+    storageBucket: "yac-platform.appspot.com",
+    messagingSenderId: "570033718479",
+    appId: "1:570033718479:web:2262483b27d108fb29a3ba",
+    measurementId: "G-51QY4WLNME"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
 
-//grab an input
-const inputEmail = form["email"];
+const db = firebase.database();
 
-//create a functions to push
-    function firebasePush(input) {
+//add an event to the submit form
+let messageRef = db.ref("message");
 
-        //push itself
-        let mailsRef = db.ref('emails').push().set(
-            {
-                mail: input.value
-            }
-        );
+const form = document.querySelector("#contact-us");
+form.addEventListener('submit', (e)=> {
+    e.preventDefault();
 
-    }
+    let name = form["name"].value;
+    let mNumber = form["m-number"].value;
+    let email = form["email"].value;
+    let message = form["message"].value;
 
-//push on form submit
-    if (form) {
-        form.addEventListener('submit', function (evt) {
-            evt.preventDefault();
-            firebasePush(inputEmail);
+    saveMessage(name, mNumber, email, message);
+    
+    document.querySelector(".alert").style.display = "block";
 
-            //shows alert if everything went well.
-            return alert('Data Successfully Sent to Realtime Database');
-        })
-    }
+    setTimeout(() => {
+      document.querySelector(".alert").style.display = "none"  
+    }, 3000);
+    
+    form.resetS;
+});
+
+
+// //save message to firebase
+
+const saveMessage = (name, email, mNumber, message) => {
+    let messages = messageRef.push();
+
+    messages.set({
+        name : name,
+        email : email,
+        mNumber : mNumber,
+        message : message
+    });
+}

@@ -14,40 +14,62 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="stylesheet.css">
     </head>
-    <body>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top" >
-            <img src="images/LogoMakr_5AneaZ.png" class="navbar-brand pointer" alt="call">
-            
-            <a href="#" class="brand text-center">YAC</a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+    <body data-spy="scroll" data-target=".navbar">
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark scrolling-navbar justify-content-center">
+            <div class="container">
+              <!-- Brand -->
+              <img src="images/LogoMakr_5AneaZ.png" class="navbar-brand phone">
+              
+              <p class="brand ">Y A C</p>        
+              <!-- Collapse -->
+              <button class="navbar-toggler justify-content-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
 
-            
 
-              <div class="collapse navbar-collapse" id="navbar">
-                  <ul class="navbar-nav">
-                      <li class="navbar-item"> <a href="#" class="navbar-link text-left">Home</a></li>
-                      <li class="navbar-item text-left" > <a href="#about" class="navbar-link">About Us</a></li>
-                      <li class="navbar-item text-right"> <a href="#" class="navbar-link">Events</a></li>
-                      <li class="navbar-item text-right"> <a href="#" class="navbar-link">Gallery</a></li>
-                      <li class="navbar-item text-right"> <a href="#" class="navbar-link">Contact Us</a></li>
-                  </ul>
+              <!-- Links -->
+              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        
+                <!-- Left -->
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#home">Home
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#events">Our Programs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                  </li>
+                </ul>
+        
               </div>
-        </nav>
-        <section class="container-fluid home" id="home" style="padding: 0%;">
+        
+            </div>
+          </nav>
+        <div class="container-fluid" id="phone">
+                <i class="material-icons" style="color: rgb(102, 98, 98); font-size: 60px;">call</i>
+                <P style="color: rgb(102, 98, 98); font-size: 30px; font-family: cursive;">080-74-987-997</P>
+                <P style="color: rgb(102, 98, 98); font-size: 30px; font-family: cursive;">090-04-287-345</P>
+              </div>
+        <section class="container-fluid home" id="home" style="padding: 0%; margin: 0ch;" id="home">
             <div class="jumbotron text-center ">
-                <h5>More Than Just a Gathering</h5>
-                <h3 style="font-weight: bold;">To Serve The Lord and Preach the gospel</h3>
+                <h4>More Than Just a Gathering</h4>
+                <h1 style="font-weight: bold;">To Serve The Lord and Preach the gospel</h1>
                 <p>Young Ambassador For Christ</p>
             </div>
         </section>
         <div class="container-fluid about bg-light" id="about">
+            <p class="heading text-center">About</p>
             <div class="row">
-            <div class="container text-center heading">
-            <p>About</p>
-            </div>
             <div class="col-sm-6 col-sm-8" >
             <p>The About page is the core description of your website. Here is where you let clients know what your we
                 bsite is about. You can edit all of this text and replace it with what you want to write.
@@ -68,7 +90,7 @@
             <p>Come and enjoy the blessing and grace of the word</p><br>
             <button type="button" class="btn btn-lg">Register Now!!!</button>
         </div>
-        <div class="container-fluid bg-light">
+        <div class="container-fluid bg-light" id="events">
             <div class="container text-center heading">
                 <p> <span style="font-size: 19px;"> Our </span><span style="color: rgb(1, 1, 49);"><b>Events</b> </span> </p>
 
@@ -113,36 +135,27 @@
                 </div>
                 </div>
         </div>
-        <div class="jumbotron gallery" id="gallery"  style="margin: 0%;">
-            <div class="container text-center heading">
-                <p>Gallery</p>
-            </div>
-            <div class="container">
+        <div class="jumbotron gallery" id="gallery"  style="margin: 0%;" id="gallery">
+            <p class="heading">Gallery</p>
+            <div class="container gallery-container">
                 <div class="row">
-                    <div class="container col-sm-4">
-                 <img src="images/WhatsApp Image 2020-09-08 at 21.42.22 (1).jpeg" alt="" class="img-fluid" width="567px" height="567px">  
+                    <div class="col-md-4">
+                        <img src="images/WhatsApp Image 2020-09-08 at 21.42.22 (1).jpeg" alt="" class="img-fluid" width="567px" height="567px">  
+                        <img src="images/WhatsApp Image 2020-09-08 at 21.42.22 (1).jpeg" alt="" class="img-fluid" width="567px" height="567px">  
                     </div>
-                    <div class=" container col-sm-4">
-                 <img src="images/WhatsApp Image 2020-09-08 at 21.42.24.jpeg" alt=""class="img-fluid" width="567px" height="567px">                        
+                    <div class="col-md-4">
+                        <img src="images/WhatsApp Image 2020-09-08 at 21.42.22 (1).jpeg" alt="" class="img-fluid" width="567px" height="567px">  
+                        <img src="images/WhatsApp Image 2020-09-08 at 21.42.22 (1).jpeg" alt="" class="img-fluid" width="567px" height="567px">  
                     </div>
-                <!-- </div> -->
-                <!-- <div class="row"> -->
-                    <div class="container col-sm-4">
-                    <img src="images/WhatsApp Image 2020-09-08 at 21.37.48.jpeg" alt=""class="img-fluid" width="567px" height="567px">
-                    </div> 
-              </div>
-                    <div class="container col-sm-3">
-                    <img src="images/WhatsApp Image 2020-09-08 at 21.42.19.jpeg" alt=""class="img-fluid">
+                    <div class="col-md-4">
+                        <img src="images/WhatsApp Image 2020-09-08 at 21.42.22 (1).jpeg" alt="" class="img-fluid" width="567px" height="567px">  
+                        <img src="images/WhatsApp Image 2020-09-08 at 21.42.22 (1).jpeg" alt="" class="img-fluid" width="567px" height="567px">  
                     </div>
-  
+                </div>
             </div>
         </div>
         <div class="container-fluid executive">
-            <div class="container text-center heading">
-                <div class="title">
-            <p> <span style="font-size: 19px;"> Meet Our </span><span style="color: rgb(1, 1, 49);"><b>Executives</b> </span> </p>
-                </div>
-        </div>
+            <p class="heading text-center"> <span style="font-size: 19px;"> Meet Our </span><span style="color: rgb(1, 1, 49);"><b>Executives</b> </span> </p>
         <div id="demo" class="carousel slide" data-ride="carousel">
             <!-- The slideshow -->
             <div class="carousel-inner text-center">
@@ -172,7 +185,7 @@
             </a>
           </div>
         </div>
-        <footer class="jumbotron footer">
+        <footer class="jumbotron footer" id="contact">
             <div class="row">
                 <div class="container col-sm-5">
                     <div class="container text-left text-light heading">
@@ -206,6 +219,9 @@
                         <div class="form-group">
                             <input type="submit" class="btn btn-success btn-sm" >
                         </div>
+                        <div class="alert bg-success">
+                          Thank you!! We will reachout to you soon 
+                        </div>
                     </form>
                 </div>
             </div>
@@ -218,23 +234,7 @@
         <!-- TODO: Add SDKs for Firebase products that you want to use
             https://firebase.google.com/docs/web/setup#available-libraries -->
         <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
-        <script>
-            var firebaseConfig = {
-                apiKey: "AIzaSyCw7wHgaD7mpWBvnn3GWprjZmX7eZXW3Pw",
-                authDomain: "yac-platform.firebaseapp.com",
-                databaseURL: "https://yac-platform.firebaseio.com",
-                projectId: "yac-platform",
-                storageBucket: "yac-platform.appspot.com",
-                messagingSenderId: "570033718479",
-                appId: "1:570033718479:web:2262483b27d108fb29a3ba",
-                measurementId: "G-51QY4WLNME"
-            };
-            // Initialize Firebase
-            firebase.initializeApp(firebaseConfig);
-            firebase.analytics();
-            
-            const db = firebase.database();
-         </script>
         <script src="firebase.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
