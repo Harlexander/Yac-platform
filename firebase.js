@@ -22,19 +22,18 @@ form.addEventListener('submit', (e)=> {
     e.preventDefault();
 
     let name = form["name"].value;
-    let mNumber = form["m-number"].value;
+    let mobile_number = form["m-number"].value;
     let email = form["email"].value;
     let message = form["message"].value;
 
-    saveMessage(name, mNumber, email, message);
+    saveMessage(name, email, mobile_number, message);
     
     document.querySelector(".alert").style.display = "block";
-
+    form.reset();
     setTimeout(() => {
       document.querySelector(".alert").style.display = "none"  
     }, 3000);
     
-    form.resetS;
 });
 
 
@@ -46,7 +45,7 @@ const saveMessage = (name, email, mNumber, message) => {
     messages.set({
         name : name,
         email : email,
-        mNumber : mNumber,
+        mobile_number : mNumber,
         message : message
     });
 }
