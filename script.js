@@ -1,7 +1,7 @@
 window.onload = () => {
         window.onscroll = () => {
     let scroll = window.scrollY;
-        if(scroll > 500){
+        if(scroll > 100){
             const nav = document.querySelector(".navbar");
             nav.style.background = "#1C2331";
          }
@@ -16,7 +16,6 @@ window.onload = () => {
        let height = window.innerHeight;
        phone.addEventListener('click', () => {
            num.style.height = (height) + "px";
-           console.log(height);
            if (num.style.display === "none"){
                num.style.display = "block";
            }else{
