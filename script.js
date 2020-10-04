@@ -36,14 +36,14 @@ let scroll = window.scrollY;
        let days = Math.floor(diff / (1000 * 60 * 60 * 24));
        let hrs = Math.floor(diff % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
        let mins = Math.floor(diff % (1000 * 60 * 60) / (1000 * 60));
-       let secs = Math.floor(diff % (1000 * 60) / (1000));
+       let sec = Math.floor(diff % (1000 * 60) / (1000));
 
        //input the result in the span element
 
        document.querySelector("#days").innerHTML = days;
        document.querySelector("#hrs").innerHTML = hrs;
        document.querySelector("#mins").innerHTML = mins;
-       document.querySelector("#secs").innerHTML = secs;
+       document.querySelector("#secs").innerHTML = sec;
 
        if(diff < 0){
            clearInterval(x);
