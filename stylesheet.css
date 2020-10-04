@@ -1,9 +1,4 @@
-html {
-    background-image:url("http://4.bp.blogspot.com/-xmeIwN05uhk/UFFKaG3MaII/AAAAAAAAAIk/pXEU2rrOHH0/s1600/Dubai+HD+Wallpapers_2.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
- }
+
 body{
     background: url("http://4.bp.blogspot.com/-xmeIwN05uhk/UFFKaG3MaII/AAAAAAAAAIk/pXEU2rrOHH0/s1600/Dubai+HD+Wallpapers_2.jpeg") fixed no-repeat;
     background-size: cover;
@@ -50,17 +45,12 @@ body{
     height: 600px;
     background: linear-gradient(rgb(1, 1, 49), blue);
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     margin-top: 20px;
 }
 
-.container-fluid{
-    margin: 0em;
-}
-.container{
-    margin: 0px;
-}
+
 @keyframes register {
     from{
         font-size: 15px;
@@ -83,6 +73,7 @@ body{
     background-size: cover;
     background: linear-gradient(rgba(0, 0, 0, 1), rgba(206, 188, 188, 0.2));
     padding: 0px;
+    overflow: hidden;
 }
 .home .jumbotron{
     border-radius: 0;
@@ -92,9 +83,11 @@ body{
     color: rgb(212, 204, 204);
     padding-top: 300px;
     font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
 }
 .container-fluid{
     padding: 30px 10px 20px 10px;
+    overflow: hidden;
 }
 .heading{
     margin: 40px 0px;
@@ -144,6 +137,7 @@ body{
     height: 400px;
     color: white;
     padding: 70px 0px 30px 0px;
+    overflow: hidden;
 }
 .event button{
     border: solid 0.5px rgb(255, 252, 252);
@@ -190,3 +184,18 @@ body{
       color: #0d8ce6;
       font-size: 20px;
   }
+  .timer{
+    padding: 10px;
+    background-color: rgb(218, 214, 214);
+    border-radius: 4px;
+    color: rgb(65, 62, 62);
+    text-align: center;
+    margin-bottom: 5px;
+}
+.next{
+    width: 100px;
+    border-radius: 3px;
+    color: white;
+    padding: 5px;
+    background-color: #1C2331;
+}
