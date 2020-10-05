@@ -25,7 +25,7 @@ let scroll = window.scrollY;
 
    //create event timer
 
-   const countDownDate = new Date("Oct 28, 2020 15:00:00").getTime();
+   const countDownDate = new Date("Oct 5, 2020 00:50:00").getTime();
 
    //update the time every second
    const x = setInterval(()=>{
@@ -47,7 +47,9 @@ let scroll = window.scrollY;
 
        if(diff < 0){
            clearInterval(x);
-           document.querySelector("#next").style.display = "none";
+           document.querySelector("#youtube").style.display = "block";
+           document.querySelector("#time").style.display = "none";
+           document.querySelector(".next").innerHTML = "Live Now !!!";
        };
    },1000)
 }
