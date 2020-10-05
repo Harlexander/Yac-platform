@@ -130,6 +130,11 @@ body{
         padding: 10px;
     }
   }
+  @media screen and (max-width: 375px){
+    .glitch{
+        height: 200px;
+    }
+  }
 .event{
     background-image: url("http://kenpulsmusic.com/images/Unsplash-raisedhands2.jpg");
     background-repeat: no-repeat;
@@ -198,4 +203,7 @@ body{
     color: white;
     padding: 6px;
     background-color: #1C2331;
+}
+iframe{
+    display: none;
 }

@@ -22,11 +22,11 @@ form.addEventListener('submit', (e)=> {
     e.preventDefault();
 
     let name = form["name"].value;
-    let mobile_number = form["m-number"].value;
+    let mobileNumber = form["m-number"].value;
     let email = form["email"].value;
     let message = form["message"].value;
 
-    saveMessage(name, email, mobile_number, message);
+    saveMessage(name, email, mobileNumber, message);
     
     document.querySelector(".alert").style.display = "block";
     form.reset();

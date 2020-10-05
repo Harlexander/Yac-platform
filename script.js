@@ -25,7 +25,7 @@ let scroll = window.scrollY;
 
    //create event timer
 
-   const countDownDate = new Date("Oct 5, 2020 00:50:00").getTime();
+   const countDownDate = new Date("Oct 30, 2020 2:00:00").getTime();
 
    //update the time every second
    const x = setInterval(()=>{
