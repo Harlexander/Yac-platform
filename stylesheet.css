@@ -1,6 +1,8 @@
 
 body{
-    background: url("http://4.bp.blogspot.com/-xmeIwN05uhk/UFFKaG3MaII/AAAAAAAAAIk/pXEU2rrOHH0/s1600/Dubai+HD+Wallpapers_2.jpeg") fixed no-repeat;
+    background-image: url("http://4.bp.blogspot.com/-xmeIwN05uhk/UFFKaG3MaII/AAAAAAAAAIk/pXEU2rrOHH0/s1600/Dubai+HD+Wallpapers_2.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     position: relative;
 }
