@@ -1,16 +1,21 @@
 window.onload = () => {
+    var btn = document.querySelector(".up");
+
     window.onscroll = () => {
 let scroll = window.scrollY;
+
     if(scroll > 100){
         const nav = document.querySelector(".navbar");
         nav.style.background = "#1C2331";
+        btn.style.display = "block"
+     }else{
+        btn.style.display = "none"
      }
-     else{
-        const nav = document.querySelector(".navbar");
-        nav.style.background = "rgba(0,0,0,.2)"
-    }
 }
-
+   btn.addEventListener("click", function() {
+       document.body.scrollTop = 0;
+       document.documentElement.scrollTop = 0;
+   })
    let phone = document.querySelector(".phone");
    let num = document.querySelector("#phone");
    let height = window.innerHeight;

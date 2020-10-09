@@ -1,8 +1,6 @@
 
 body{
-    background-image: url("http://4.bp.blogspot.com/-xmeIwN05uhk/UFFKaG3MaII/AAAAAAAAAIk/pXEU2rrOHH0/s1600/Dubai+HD+Wallpapers_2.jpeg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: url("http://4.bp.blogspot.com/-xmeIwN05uhk/UFFKaG3MaII/AAAAAAAAAIk/pXEU2rrOHH0/s1600/Dubai+HD+Wallpapers_2.jpeg") fixed no-repeat;
     background-size: cover;
     position: relative;
 }
@@ -206,6 +204,28 @@ body{
     padding: 6px;
     background-color: #1C2331;
 }
-iframe{
+.up{
+    background: #1C2331;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    animation: infinite 1s up;
     display: none;
 }
+.up i{
+    border: 0;
+    margin: 0px;
+    line-height: 0px;
+}
+@keyframes up {
+    from{
+        bottom: 20px;
+        }
+        to{
+            bottom: 30px;
+        }
+    }

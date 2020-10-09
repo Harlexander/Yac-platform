@@ -44,6 +44,9 @@
                     <a class="nav-link" href="#gallery">Gallery</a>
                   </li>
                   <li class="nav-item">
+                    <a class="nav-link" href="channel.html">Media</a>
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact Us</a>
                   </li>
                 </ul>
@@ -195,6 +198,7 @@
             </a>
           </div>
         </div>
+        <button class="btn up"><i class="fa fa-angle-double-up"></i><br><i class="fa fa-angle-double-up"></i></button>
         <footer class="jumbotron footer" id="contact">
             <div class="row">
                 <div class="container col-sm-5">
@@ -217,7 +221,7 @@
                     <div class="container text-left text-light heading">
                         <p>Reach Out Now!!</p>
                         </div>
-                    <form id="contact-us" class="form">
+                    <form action="mail-composer.php" method="post" id="contact-us" class="form">
                         <div class="form-group">
                             <input type="text" name="name" id="name"  class="form-control bg-dark" placeholder="Full name" style="color: white;" required>
                         </div>
@@ -228,10 +232,10 @@
                             <input type="email" name="email" id="email" class="form-control bg-dark" style="color: white;" placeholder="Email *(optional)" >
                         </div>
                         <div class="form-group">
-                            <textarea name="Message" id="message" cols="10" rows="5" class="form-control bg-dark" style="color: white;" placeholder="Message"></textarea>
+                            <textarea name="message" id="messages" cols="10" rows="5" class="form-control bg-dark" style="color: white;" placeholder="Message"></textarea>
                         </div>
                         <div class="form-group">
-                            <input type="submit" class="btn btn-success btn-sm" >
+                            <input type="submit" name="submit" class="btn btn-success btn-sm" >
                         </div>
                         <div class="alert bg-success">
                           Thank you!! We will reachout to you soon 
